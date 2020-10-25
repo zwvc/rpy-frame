@@ -58,14 +58,14 @@ Probably you will need to install all the missing python packages first. For me 
 sudo apt-get update
 sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libfreetype6-dev python3-setuptools python3-dev python3 libportmidi-dev
 sudo apt-get install python3-numpy libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libavformat-dev libswscale-dev libjpeg-dev
-sudo pip3.6 install --upgrade pip
-sudo pip3.6 install pygame
-sudo pip3.6 install pillow
-sudo pip3.6 install scipy
-sudo pip3.6 install matplotlib
-sudo pip3.6 install six
-sudo pip3.6 install colorthief
-sudo pip3.6 install RPi.GPIO
+sudo pip3 install --upgrade pip
+sudo pip3 install pygame
+sudo pip3 install pillow
+sudo pip3 install scipy
+sudo pip3 install matplotlib
+sudo pip3 install six
+sudo pip3 install colorthief
+sudo pip3 install RPi.GPIO
 ```
 
 # Optional setup

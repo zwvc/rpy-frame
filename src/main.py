@@ -26,12 +26,13 @@ def parse_cmd_args(settings: Settings):
 
 def main():
     pygame.init()
+    pygame.display.set_mode((0,0), pygame.FULLSCREEN)
     settings = Settings()
     parse_cmd_args(settings)
     gui = Gui(settings)
     thread_context = ThreadContext(settings, gui)
     thread_context.button_quit_handlers.append(lambda: os._exit(0))
-    _thread.start_new_thread(start_io_thread, (thread_context, pygame))
+    # _thread.start_new_thread(start_io_thread, (thread_context, pygame))
 
     # main thread
     start_presentation_thread(thread_context)

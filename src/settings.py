@@ -10,7 +10,7 @@ class Settings:
         self.media_folder: str = "../samples"
 
         # duration in seconds
-        self.duration: int = 600
+        self.duration: int = 1
  
         # This setting is basically inverted setting how much to zoom-in wide images
         #
@@ -39,7 +39,7 @@ class Settings:
         # Alpha value of the background - colors of the background will not be as strong as the colors of the photo
         # They will be projected against neutral gray that is controlled by background_lightness and where 0.5 means 50% gray
         self.background_alpha: float = 0.15
-        self.background_lightness: float = 0.0
+        self.background_lightness: float = 0.5
 
         # PPI (pixels per inch) of the background
         # Lower values will result in more repetitions of the background patterns
@@ -54,8 +54,8 @@ class Settings:
         # It's color should therefore match the color of the material around the screen
         self.outer_border_color = (231, 231, 223)
         self.inner_border_color = (231, 231, 223)
-        self.border_inner: int = 6
-        self.border_outer: int = 6
+        self.border_inner: int = 0
+        self.border_outer: int = 0
 
         # Blur background
         self.blur_background = True
@@ -70,7 +70,7 @@ class Settings:
         self.physical_button_longpress_duration = 600
 
         # Prepared images buffer size - how many images are prepared in advance
-        self.prepared_images_buffer_size = 10
+        self.prepared_images_buffer_size = 2
 
         # Target line length for image comment
         # After target length comment will be broken into new line at the first space
